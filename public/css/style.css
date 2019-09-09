@@ -1,0 +1,242 @@
+
+
+
+  /*Add style to the banner onthe about page*/
+.profile-cover {
+  background-image: url(../img/iuBackground.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  background-size:cover;
+  min-height: 400px;
+}
+/*Brittamy Goodwin Helped Me with this part*/
+.contain {
+position: absolute;
+margin: 20px;
+width: auto;
+}
+/*Adjusts profile name*/
+.profileColor{
+  color:#FB3636;
+  font-weight: bold;
+}
+.profile-cover2 {
+  background-image: url(../img/plane.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  background-size:cover;
+  min-height: 1000px;
+}
+/*customize the profile image*/
+.imageprofile {
+  max-width: 200px;
+  border: 1px solid #ddd;
+  border-radius: 100px;
+  padding: 5px;
+  width: 150px;
+  height: 150px;
+  resize: inherit;
+  position: left;
+  }
+/*Add profile styling changes with alignment and font*/
+.profile-text{
+  text-align: justify;
+  color: white;
+  font-style: oblique;
+  font-size:larger;
+  font-family: sans-serif;
+  position: absolute;
+  top:85%;
+  left: auto;
+  /*transform: translate(-50%, -50%);*/
+  color:white;
+}
+/* Adds a black and bold font */
+.fontBold{
+  font-weight: bold;
+  color:white;
+  align-self: auto;
+
+}
+/* Adds text styling and size for quotes*/
+.quote {
+  font-weight: bold;
+  font-family: sans-serif;
+  font-size: 20px;
+  margin: 10px;
+}
+
+/*Adjusts paragraph syling for easier reading and personability*/
+.paragraph {
+  font-family: sans-serif;
+  font-size: 20px;
+  font-style: italic;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 25px;
+  column-fill: auto;
+  align-items: stretch;
+  margin: 10px;
+}
+/* some heading fonts*/
+.heading {
+  font-family: sans-serif;
+  font-size: 30px;
+  font-style: italic;
+  font-variant: normal;
+  margin: 20px;
+  font-weight: 400;
+  line-height: 25px;
+  column-fill: auto;
+  align-items: stretch;
+  color: #C05B5B;
+  margin: 10px;}
+
+/* some cover font styling*/
+.paragraphCover {
+  font-family: sans-serif;
+  font-size: 20px;
+  font-style: italic;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 25px;
+  column-fill: auto;
+  align-items: stretch;
+  color:white;
+  margin:20px;
+  margin-top: 400px;
+}
+
+
+/* Adds a black background color to the top nav bar */
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+  size: auto;
+}
+
+/* Links inside the nav bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 25px;
+  font-style: italic;
+  font-variant: normal;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+} /*W3 Schools with some of my edits*/
+
+/* Links change color when mouse hovers */  /*W3 Schools with some of my edits*/
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Adds a color to selected or hovered link */
+.topnav a.active {
+  background-color: #C05B5B;
+  color: white;
+}  /*W3 Schools with some of my edits*/
+
+/*Background color for table headers*/
+th {
+  background-color: #C05B5B;
+  color: white;
+  font-size:larger;
+  font-family: sans-serif;
+  font-style: bold;
+  padding: 10px;
+}
+
+/*From W3 Schools to change the background of the table even rows*/
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+  font-size:large;
+  font-family: sans-serif;
+  font-style: bold;
+  padding: 5px
+}
+
+/*From W3 Schools to change the background of the table odd rows*/
+tr:nth-child(odd) {
+font-family: sans-serif;
+font-size:large;
+font-style: bold;
+background-color:#e6b3cc;
+padding: 5px}
+
+
+/*Styling for page bottom info */
+.bottomInfo
+{
+  font-family: sans-serif;
+  margin: 10px;
+}
+
+
+.formCareer {
+  position: center;
+  font-size:large;
+  font-family: sans-serif;
+  background-color: grey;
+  padding:10px;
+  font-weight: bold
+
+}
+/* Button for form*/
+button {
+  font-size:large;
+  font-weight: bold;
+}
+
+/*This is from W3 Schools for form and table*/
+input[type=text]:focus {
+  border: 3px solid #555;
+}
+
+/*Declaration by ID for formatting adventure mountain picture*/
+
+#pictureMountain {
+  height: 700px
+}
+
+/*Declaration by ID for formatting volcano picture*/
+#pictureVolcano {
+  height: 650px;
+  margin:50px;
+  align-content: center;
+}
+
+/*Edits bottom of page address*/
+address {
+  padding: 20px
+}
+
+/*Declaration by ID for formatting IU logo picture*/
+#IU {
+  height: 100px;
+  width: 700px;
+    margin:5%;
+}
+
+/* Did this with Brittany Goodwin for clicking visible link*/
+.image-container{
+  position: relative;
+  display: inline-block;
+}
+
+.image-attribute {
+  position: absolute;
+  bottom:0;
+  right: 0;
+  margin: 0 .5em .5em 0 ;
+  padding: .25;
+  font-size: 12px;
+  color: white;
+  background-color: rgba(0,0,0,.2)
+}
