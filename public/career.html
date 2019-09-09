@@ -33,7 +33,7 @@
   <p class= "fontBold" style= "text-align: center">Here are a few books that have inspired my career and personal life: </p>
   <div class= "container">
 <form method="GET" id="my_form"></form>
-  <table>
+  <table id= "taskTable">
     <thead>
       <tr>
         <th> Book Name</th>
@@ -113,7 +113,10 @@
 
 
 
-
+<script src= "js/tablesort.min.js"> </script>
+<script>
+  new Tablesort(document.getElementById('taskTable'));
+</script>
 <br>
 <form>
 <br>
