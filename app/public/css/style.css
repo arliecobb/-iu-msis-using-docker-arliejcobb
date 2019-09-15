@@ -37,6 +37,7 @@ width: auto;
   padding: 5px;
   width: 150px;
   height: 150px;
+  margin-left: 10px;
   resize: inherit;
   position: left;
   }
@@ -49,7 +50,8 @@ width: auto;
   font-family: sans-serif;
   position: absolute;
   top:85%;
-  left: auto;
+  margin-left: 10px;
+
   /*transform: translate(-50%, -50%);*/
   color:white;
 }
@@ -58,6 +60,7 @@ width: auto;
   font-weight: bold;
   color:white;
   align-self: auto;
+  margin-left: 10px
 
 }
 /* Adds text styling and size for quotes*/
