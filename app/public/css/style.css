@@ -20,6 +20,7 @@ width: auto;
 .profileColor{
   color:#FB3636;
   font-weight: bold;
+  text-transform: capitalize;
 }
 .profile-cover2 {
   background-image: url(../img/plane.jpg);
@@ -82,6 +83,10 @@ width: auto;
   column-fill: auto;
   align-items: stretch;
   margin: 10px;
+}
+/*Capitalize the random user info in the list*/
+.li{
+  text-transform: capitalize;
 }
 /* some heading fonts*/
 .heading {

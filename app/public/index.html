@@ -46,10 +46,10 @@
 </div>
   <p class= "paragraph">Here is a little bit about myself and my background: </p>
   <ul class= "paragraph">
-    <li> I am born and bred from {{ users.results[0].location.city }}, {{ users.results[0].location.state }} ({{ users.results[0].location.description }}).</li>
-    <li> My birthday is {{ users.results[0].dob.date }}, so feel free to buy me a gift! </li>
+    <li class="li"> I am born and bred from {{ users.results[0].location.city }}, {{ users.results[0].location.state }}!</li>
+    <li class="li"> My birthday is specifically {{ users.results[0].dob.date }}, so feel free to buy me a gift! </li>
     <li>I love trying new foods and drinks with friends, especially taste testing craft beers.</li>
-    <li> As Taylor Swift once sang, "I don't know about you but I'm feeling 22." What an age to be alive! </li>
+    <li class="li"> {{ users.results[0].dob.age }}... What an age to be alive! </li>
     <li>I graduated from Indiana University with degrees in Finance and Entrepreneurship. Currently, I am furthering my education with a Masters of Science in Information Systems.
     <li>I have one sibling also at IU and a Weimeraner puppy named Anges.</li>
 </ul>
@@ -70,10 +70,8 @@
 </div>
 <br>
 <address class = "bottomInfo">
-  Written by <a href="{{ users.results[0].email }}">{{ users.results[0].name.first }} {{ users.results[0].name.last }} </a>
+  Written by <a class= li v-bind:href="'mailto:'+users.results[0].email">{{ users.results[0].name.first }} {{ users.results[0].name.last }} <br> {{ users.results[0].email }} </a>
   <br>
-  Visit my LinkedIn at:<br>
-<a href=https://www.linkedin.com/in/arliecobb>www.linkedin.com/in/arliecobb</a><br>
 
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="js/randomuser.app.js"></script>
