@@ -6,56 +6,65 @@
   <link rel="stylesheet"  href="css/style.css">
 </head>
 <body>
+  <form>
   <!-- credits to fix https://javalin.io/tutorials/simple-frontends-with-javalin-and-vue-->
   <div id="randomUser">
     <template v-if="users.results">
       <div>
-    <a href="img/iuBackground.jpg">
-      <div class="profile-cover">
-      <div class = "contain"><!-- Brittany Goodwin Helped Me figure Out My Header Issues-->
-    </a>
-
+        <a href="img/iuBackground.jpg">
+          <div class="profile-cover">
+          <div class = "contain"><!-- Brittany Goodwin Helped Me figure Out My Header Issues-->
+        </a>
         <br>
         <br>
-
-          <div >
-            <a href="users.results[0].picture.large">
-              <img v-bind:src="users.results[0].picture.large" alt="Profile Picture" class="imageprofile" media="screen">
-            </a>
-            <br>
-            <br>
-            <h1 class="profileColor" >{{ users.results[0].name.first }} {{ users.results[0].name.last }} </h1>
-            <h3 class= "fontBold">LIVING LIFE WITH PASSION, PURPOSE, & POSITIVITY.</h3>
-          </div>
+        <div >
+          <a href="users.results[0].picture.large">
+            <img v-bind:src="users.results[0].picture.large" alt="Profile Picture" class="imageprofile" media="screen">
+          </a>
+          <br>
+          <br>
+          <h1 class="profileColor" >{{ users.results[0].name.first }} {{ users.results[0].name.last }} </h1>
+          <h3 class= "fontBold">LIVING LIFE WITH PASSION, PURPOSE, & POSITIVITY.</h3>
+        </div>
         </div>
 
+          </div>
+
+      <div class="topnav">
+        <a class="active" href="index.html">About</a>
+        <a href="career.html">Career</a>
+        <a href="adventures.html">Adventures</a>
       </div>
 
-<div class="topnav">
-  <a class="active" href="index.html">About</a>
-  <a href="career.html">Career</a>
-  <a href="adventures.html">Adventures</a>
-</div>
 
+      <div class = "contain">
+        <div class="profile-text"></div>
+      </div>
 
-  <div class = "contain">
-    <div class="profile-text"></div>
-  </div>
+      <q class="quote" style="margin-left:10px">If you see someone without a smile, give them yours.</q>
+      <h3 class= "quote">- Dolly Parton</h3>
+      <div background = grey>
+        <p class= "paragraph"> As an indiviual, I continuosly strive to better the world around me and bring change to real-world problems. Whether pursuing a career in technology or traveling on a new adventure, there are so many opportunities to learn new solutions from talented individuals with various backgrounds.</p>
+      </div>
+      <p class= "paragraph">Here is a little bit about myself and my background: </p>
+      <ul class= "paragraph">
+        <li class="li"> I am born and bred from {{ users.results[0].location.city }}, {{ users.results[0].location.state }}!</li>
+        <li class="li"> My birthday is specifically {{ users.results[0].dob.date }}, so feel free to buy me a gift! </li>
+        <li>I love trying new foods and drinks with friends, especially taste testing craft beers.</li>
+        <li class="li"> {{ users.results[0].dob.age }}... What an age to be alive! </li>
+        <li>I graduated from Indiana University with degrees in Finance and Entrepreneurship. Currently, I am furthering my education with a Masters of Science in Information Systems.
+        <li>I have one sibling also at IU and a Weimeraner puppy named Anges.</li>
+      </ul>
 
-<q class="quote" style="margin-left:10px">If you see someone without a smile, give them yours.</q>
-<h3 class= "quote">- Dolly Parton</h3>
-<div background = grey>
-  <p class= "paragraph"> As an indiviual, I continuosly strive to better the world around me and bring change to real-world problems. Whether pursuing a career in technology or traveling on a new adventure, there are so many opportunities to learn new solutions from talented individuals with various backgrounds.</p>
-</div>
-  <p class= "paragraph">Here is a little bit about myself and my background: </p>
-  <ul class= "paragraph">
-    <li class="li"> I am born and bred from {{ users.results[0].location.city }}, {{ users.results[0].location.state }}!</li>
-    <li class="li"> My birthday is specifically {{ users.results[0].dob.date }}, so feel free to buy me a gift! </li>
-    <li>I love trying new foods and drinks with friends, especially taste testing craft beers.</li>
-    <li class="li"> {{ users.results[0].dob.age }}... What an age to be alive! </li>
-    <li>I graduated from Indiana University with degrees in Finance and Entrepreneurship. Currently, I am furthering my education with a Masters of Science in Information Systems.
-    <li>I have one sibling also at IU and a Weimeraner puppy named Anges.</li>
-</ul>
+    </div>
+
+    <address class = "bottomInfo">
+      Written by <a class= li v-bind:href="'mailto:'+users.results[0].email">{{ users.results[0].name.first }} {{ users.results[0].name.last }} <br> {{ users.results[0].email }} </a>
+      <br>
+      <button @click.prevent = "norefresh" style="width:100%; height:100%" class="btn btn-primary">Submit</button>
+        </template>
+        </div>
+            </form>
 
 <br>
 <br>
@@ -71,16 +80,10 @@
   </a>
 </div>
 </div>
-<br>
-<address class = "bottomInfo">
-  Written by <a class= li v-bind:href="'mailto:'+users.results[0].email">{{ users.results[0].name.first }} {{ users.results[0].name.last }} <br> {{ users.results[0].email }} </a>
-  <br>
-</div>
-</template>
-  </div>
-  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-    <script src="js/randomuser.app.js"></script>
 
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="js/randomuser.app.js"></script>
 
 </body>
 </html>
