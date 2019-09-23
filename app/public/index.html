@@ -6,9 +6,10 @@
   <link rel="stylesheet"  href="css/style.css">
 </head>
 <body>
-  <form>
-  <!-- credits to fix https://javalin.io/tutorials/simple-frontends-with-javalin-and-vue-->
   <div id="randomUser">
+  <form v-on:submit.prevent="norefresh">
+  <!-- credits to fix https://javalin.io/tutorials/simple-frontends-with-javalin-and-vue-->
+
     <template v-if="users.results">
       <div>
         <a href="img/iuBackground.jpg">
@@ -61,10 +62,11 @@
     <address class = "bottomInfo">
       Written by <a class= li v-bind:href="'mailto:'+users.results[0].email">{{ users.results[0].name.first }} {{ users.results[0].name.last }} <br> {{ users.results[0].email }} </a>
       <br>
-      <button @click.prevent = "norefresh" style="width:100%; height:100%" class="btn btn-primary" type="submit">Submit</button>
+      <button  style="width:100%; height:100%" class="btn btn-primary" type="submit">New User</button>
         </template>
-        </div>
+
             </form>
+            </div>
 
 <br>
 <br>
